@@ -1,0 +1,30 @@
+<!-- your_specific_page.html -->
+{% extends '_base.html' %}
+
+{% block maincontent %}
+    <!-- Services Start -->
+    {% include 'services.html' %}
+    <!-- Services End -->
+
+    <!-- Schedule Start -->
+    {% include 'schedule.html' %}
+    <!-- Schedule End -->
+
+    <!-- About End -->
+    {% include 'about.html' %}
+    <!-- About End -->
+
+    <!-- Testimonial End -->
+    {% include 'testimonial.html' %}
+    <!-- Testimonial End -->
+
+    <!-- Login and Register Links -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>Already have an account? <a href="/">Login</a></p>
+                <p>Don't have an account yet? <a href="/register">Register</a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
